@@ -3,7 +3,6 @@ import { CurrencySelector } from './components/CurrencySelector';
 import { SwapButton } from './components/SwapButton';
 import { RateDisplay } from './components/RateDisplay';
 import { GetRateButton } from './components/GetRateButton';
-import { FallingSnow } from './components/FallingSnow';
 import { formatRate } from './utils/formatRate';
 import axios from 'axios';
 
@@ -136,7 +135,6 @@ const App = () => {
       />
 
       {/* Падающий снег */}
-      <FallingSnow parallaxOffset={parallaxOffset} />
 
       {/* Декоративные пятна на фоне (Glow effect) */}
       <div className="fixed top-[-10%] left-[-10%] w-[400px] h-[400px] bg-indigo-600/20 rounded-full blur-[90px] pointer-events-none" />
