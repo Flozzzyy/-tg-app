@@ -10,7 +10,7 @@ export const GetRateButton = ({ loading, disabled }) => {
       {/* Эффект блеска при наведении */}
       <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
 
-      {loading ? (
+      {loading ? (                      
         <>
           <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
           <span>Считаем...</span>
