@@ -23,8 +23,18 @@ export const RateDisplay = ({ rate, loading, error }) => {
     return null; // Не показываем пустой блок, чтобы не занимать место
   }
 
+
   return (
-    <div className="relative overflow-hidden px-6 py-6 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-3xl text-center shadow-lg backdrop-blur-md animate-in slide-in-from-bottom-4 duration-500">
+    <div
+      className="relative overflow-hidden px-6 py-6 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 border border-emerald-500/20 rounded-3xl text-center shadow-lg backdrop-blur-md animate-fade-in min-h-[120px] flex flex-col justify-center"
+      style={{
+        willChange: 'transform, opacity',
+        transform: 'translateZ(0)',
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
+        WebkitTransform: 'translateZ(0)'
+      }}
+    >
       {/* Декоративный блик */}
       <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/20 blur-2xl rounded-full -mr-10 -mt-10"></div>
 
